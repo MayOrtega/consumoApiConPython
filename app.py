@@ -11,3 +11,11 @@ def get_users():
     data = get_random_users(limit, categorize)
     return jsonify(data)
 
+@app.route('/users', methods=['Get'])
+def get_users_with_favorite_drink():
+    data = get_user_with_favorite_drink
+    return jsonify(data)
+
+if __name__ == '__main__':
+    app.run(debug=True, port=3000)
+
