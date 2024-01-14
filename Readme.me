@@ -1,0 +1,37 @@
+# 🌐 Flask API con Consumo de APIs Externas 🚀
+
+Este proyecto utiliza Flask para crear una API que consume datos de las APIs randomuser.me y thecocktaildb.com.
+
+## Instalación 🛠️
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/MayOrtega/consumoApiConPython.git
+
+2. Intala las dependencias:
+
+pip install -r requirements.txt
+
+
+## Uso 
+
+Obtener Usuarios Aleatorios
+Endpoint: /users
+
+Parámetros
+limit: Número de usuarios a obtener (por defecto: 10).
+categorize: Ordenar por género (gender).
+Ejemplo: http://localhost:3000/users?limit=5&categorize=gender
+
+Obtener Usuarios con Bebida Favorita
+Endpoint: /users/drink
+
+Este endpoint muestra nombre, apellido, email y nacionalidad de cada usuario, añadiéndole un trago favorito.
+
+Ejemplo: http://localhost:3000/users/drink
+
+
+# Contribuciones 💖
+
+¡Contribuciones son bienvenidas! Si encuentras un problema o tienes una mejora, por favor abre un issue o envía un pull request.
